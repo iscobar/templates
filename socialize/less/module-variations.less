@@ -1,0 +1,428 @@
+/**
+ * @package   Socialize Template
+ * @copyright JomSocial, Copyright (C) 2015 All rights reserved.
+ *
+ * ~ We decided to support all old SBOX class names.
+ */
+
+// -----------------
+// MODULE VARIATIONS
+// -----------------
+
+// NO-BORDER MODULE
+.sbox1,
+.module-no-border {
+  background-color: transparent;
+  box-shadow: none;
+
+  .module-title {
+    background-color: transparent;
+    margin: @padding-base 0;
+    font-size: @font-size-h3;
+    padding: 0;
+  }
+
+  .module-ct {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+// BOLD MODULE
+.sbox5,
+.module-bold {
+  background-color: transparent;
+  border: @t3-module-border;
+  box-shadow: none;
+
+  .module-title {
+    background-color: @t3-module-title-bg;
+    color: @t3-module-color;
+  }
+  // joomla modules fix
+  .module-bold {
+    border: none;
+  }
+}
+
+// BLUE MODULE
+.sbox9,
+.module-blue {
+  background-color: #38538e;
+  color: #cad1de;
+
+  .module-title {
+    background-color: #2d467d;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #cad1de;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// PINK MODULE
+.module-pink {
+  background-color: #eb70bc;
+  color: #ffd4ed;
+
+  .module-title {
+    background-color: #e64eac;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #ffd4ed;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// PURPLE MODULE
+.module-purple {
+  background-color: #7e57c2;
+  color: #d1c4e9;
+
+  .module-title {
+    background-color: #673ab7;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: #ede7f6;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #d1c4e9;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// LIGHT BLUE MODULE
+.module-light-blue {
+  background-color: #03a8f4;
+  color: #a8e0f9;
+
+  .module-title {
+    background-color: #039ae5;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #a8e0f9;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// LIGHT GREEN MODULE
+.module-light-green {
+  background-color: #b9db70;
+  color: #3e4f22;
+
+  .module-title {
+    background-color: #86d10c;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #3e4f22;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// GREEN MODULE
+.sbox12,
+.module-green {
+  background-color: #4CAF50;
+  color: #C8E6C9;
+
+  .module-title {
+    background-color: #388E3C;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #C8E6C9;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// RED MODULE
+.sbox10,
+.module-red {
+  background-color: #F44336;
+  color: #FFCDD2;
+
+  .module-title {
+    background-color: #D32F2F;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #FFCDD2;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// ORANGE MODULE
+.sbox11,
+.module-orange {
+  background-color: #FF5722;
+  color: #FFCCBC;
+
+  .module-title {
+    background-color: #E64A19;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #FFCCBC;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// BROWN MODULE
+.module-brown {
+  background-color: #795548;
+  color: #D7CCC8;
+
+  .module-title {
+    background-color: #5D4037;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #D7CCC8;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// GRAY MODULE
+.module-gray {
+  background-color: #747474;
+  color: #bdbdbd;
+
+  .module-title {
+    background-color: #545454;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #bdbdbd;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// DARK MODULE
+.module-dark {
+  background-color: #424242;
+  color: #bdbdbd;
+
+  .module-title {
+    background-color: #212121;
+    color: white;
+  }
+
+  .module-ct {
+    background-color: transparent;
+  }
+
+  a {
+    color: white;
+    &:hover, &:focus, &.active, &.active-state {
+      color: #bdbdbd;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255, 0.1);
+  }
+}
+
+// -------------------------
+// SUPPORT ALERT FOR MODULES
+// -------------------------
+.module {
+  &.alert {
+    padding: 0;
+    box-shadow: none;
+    .module-title {
+      padding-bottom: 0;
+    }
+    // joomla modules fix
+    .alert {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border: none;
+    }
+  }
+  // success alert module
+  &.alert-success {
+    .module-title {
+      background-color: @alert-success-bg;
+      color: @alert-success-text;
+    }
+    .module-ct {
+      background-color: @alert-success-bg;
+      color: @alert-success-text;
+    }
+    a {
+      color: darken(@alert-success-text, 10%);
+      &:hover, &:focus, &.active, &.active-state {
+        color: darken(@alert-success-text, 15%);
+        text-decoration: underline;
+      }
+    }
+  }
+  // info alert module
+  &.alert-info {
+    .module-title {
+      background-color: @alert-info-bg;
+      color: @alert-info-text;
+    }
+    .module-ct {
+      background-color: @alert-info-bg;
+      color: @alert-info-text;
+    }
+    a {
+      color: darken(@alert-info-text, 10%);
+      &:hover, &:focus, &.active, &.active-state {
+        color: darken(@alert-info-text, 15%);
+        text-decoration: underline;
+      }
+    }
+  }
+  // warning alert module
+  &.alert-warning {
+    .module-title {
+      background-color: @alert-warning-bg;
+      color: @alert-warning-text;
+    }
+    .module-ct {
+      background-color: @alert-warning-bg;
+      color: @alert-warning-text;
+    }
+    a {
+      color: darken(@alert-warning-text, 10%);
+      &:hover, &:focus, &.active, &.active-state {
+        color: darken(@alert-warning-text, 15%);
+        text-decoration: underline;
+      }
+    }
+  }
+  // danger alert module
+  &.alert-danger {
+    .module-title {
+      background-color: @alert-danger-bg;
+      color: @alert-danger-text;
+    }
+    .module-ct {
+      background-color: @alert-danger-bg;
+      color: @alert-danger-text;
+    }
+    a {
+      color: darken(@alert-danger-text, 10%);
+      &:hover, &:focus, &.active, &.active-state {
+        color: darken(@alert-danger-text, 15%);
+        text-decoration: underline;
+      }
+    }
+  }
+}

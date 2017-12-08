@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>Socialize</name>
+	<version>2.1.1</version>
+	<creationDate>April 25 2016</creationDate>
+	<author>JomSocial</author>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<copyright>Copyright (C), iJoomla Inc.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+			<div style="display:table; width:100%;">
+				<style>
+					table.adminform{width: 100%; margin-bottom: 30px;}
+					strong{color: #fff;}
+				</style>
+
+				<div style="text-align:center; background: rgb(60, 64, 81); color: #fff; padding: 30px; display:table-cell;">
+					<a href="http://socialize.jomsocial.com/"><img src="../templates/socialize/images/logo.png" alt="Socialize, Bringing the Social Back" width="230" height="85"></a>
+					<h3 style="margin-top: 25px;">Socialize 2.1.1</h3>
+					<h6 style="color:rgba(255,255,255, 0.5);">April 25 2016</h6>
+				</div>
+				<div style="text-align:center; padding: 20px; background:rgb(76, 162, 129); display:table-cell; vertical-align:middle;">
+					<h2 style="color: #fff;">IMPORTANT</h2>
+					<p style="color: rgba(255,255,255, 0.8); font-weight:normal;">Go to template settings and click on <strong>LESS > CSS..</strong> wait and then Save.</p>
+				</div>
+			</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>local</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_socialize.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_socialize.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>top-header</position>
+		<position>languageswitcherload</position>
+		<position>head-search</position>
+		<position>mainnav</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>footer</position>
+		<position>home-1</position>
+		<position>home-2</position>
+		<position>home-3</position>
+		<position>home-4</position>
+		<position>home-5</position>
+		<position>home-wide</position>
+		<position>top-1</position>
+		<position>top-2</position>
+		<position>top-3</position>
+		<position>top-4</position>
+		<position>top-5</position>
+		<position>top-6</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>bottom-1</position>
+		<position>bottom-2</position>
+		<position>bottom-3</position>
+		<position>bottom-4</position>
+		<position>bottom-5</position>
+		<position>bottom-6</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<fieldset name="addon_params" label="T3_ADDON_LABEL" description="T3_ADDON_DESC">
+				<field name="addon_group_default" type="t3depend" function="@group">
+					<option for="addon_offcanvas_enable" value="1">
+						addon_offcanvas_effect
+					</option>
+				</field>
+
+				<field name="offtitle" type="text" default="Off-Canvas Sidebar" filter="RAW" size="20"
+							 label="T3_OFFCANVAS_TITLE"
+							 description="T3_OFFCANVAS_TITLE_DESC"
+							 placeholder="T3_OFFCANVAS_TITLE_HINT"
+					/>
+
+				<field name="addon_offcanvas_legend" type="t3depend" function="@legend" label="T3_ADDON_OFFCANVAS_GROUP_LABEL"
+							 description="T3_ADDON_OFFCANVAS_GROUP_DESC"/>
+
+				<field name="addon_offcanvas_enable" type="radio" default="0"
+							 global="1"
+							 label="T3_ADDON_OFFCANVAS_ENABLE_LABEL"
+							 description="T3_ADDON_OFFCANVAS_ENABLE_DESC">
+					<option value="0" class="off">JNO</option>
+					<option value="1" class="on">JYES</option>
+				</field>
+
+				<field name="addon_offcanvas_effect" type="list" default="off-canvas-effect-4"
+							 global="1"
+							 label="T3_ADDON_OFFCANVAS_EFFECT_LABEL"
+							 description="T3_ADDON_OFFCANVAS_EFFECT_DESC">
+					<option value="off-canvas-effect-1">T3_ADDON_OFFCANVAS_EFFECT_1</option>
+					<option value="off-canvas-effect-2">T3_ADDON_OFFCANVAS_EFFECT_2</option>
+					<option value="off-canvas-effect-3">T3_ADDON_OFFCANVAS_EFFECT_3</option>
+					<option value="off-canvas-effect-4">T3_ADDON_OFFCANVAS_EFFECT_4</option>
+					<option value="off-canvas-effect-5">T3_ADDON_OFFCANVAS_EFFECT_5</option>
+					<option value="off-canvas-effect-6">T3_ADDON_OFFCANVAS_EFFECT_6</option>
+					<option value="off-canvas-effect-7">T3_ADDON_OFFCANVAS_EFFECT_7</option>
+					<option value="off-canvas-effect-8">T3_ADDON_OFFCANVAS_EFFECT_8</option>
+					<option value="off-canvas-effect-9">T3_ADDON_OFFCANVAS_EFFECT_9</option>
+					<option value="off-canvas-effect-10">T3_ADDON_OFFCANVAS_EFFECT_10</option>
+					<option value="off-canvas-effect-11">T3_ADDON_OFFCANVAS_EFFECT_11</option>
+					<option value="off-canvas-effect-12">T3_ADDON_OFFCANVAS_EFFECT_12</option>
+					<option value="off-canvas-effect-13">T3_ADDON_OFFCANVAS_EFFECT_13</option>
+					<option value="off-canvas-effect-14">T3_ADDON_OFFCANVAS_EFFECT_14</option>
+				</field>
+
+			</fieldset>
+
+		<fieldset name="theme_params" label="T3_THEME_LABEL" description="T3_THEME_DESC">
+
+			<field name="theme_params_default" type="t3depend" function="@group">
+				<option for="logotype" value="image">
+					logoimage, logoimage_sm, enable_logoimage_sm
+				</option>
+				<option for="enable_logoimage_sm" value="1">
+					logoimage_sm
+				</option>
+			</field>
+
+			<field name="theme" type="t3folderlist" default=""
+						 label="T3_THEME_THEME_LABEL"
+						 description="T3_THEME_THEME_DESC"
+						 filter=".*"
+						 directory="less/themes"
+						 stripext="true"
+						 hide_none="true"/>
+
+			<field name="logotype" type="list" default="image"
+						 label="T3_THEME_LOGOTYPE_LABEL"
+						 description="T3_THEME_LOGOTYPE_DESC">
+				<option value="image">T3_THEME_LOGOTYPE_IMAGE</option>
+				<option value="text">T3_THEME_LOGOTYPE_TEXT</option>
+			</field>
+
+			<field name="sitename" type="text" default="" filter="RAW" size="50"
+						 label="T3_THEME_SITENAME_LABEL"
+						 description="T3_THEME_SITENAME_DESC"
+						 placeholder="T3_THEME_SITENAME_HINT"
+				/>
+			<field name="slogan" type="text" default="" filter="RAW" size="50"
+						 label="T3_THEME_SLOGAN_LABEL"
+						 description="T3_THEME_SLOGAN_DESC"
+						 placeholder="T3_THEME_SLOGAN_HINT"
+				/>
+
+			<field name="logoimage" type="t3media" default=""
+						 label="T3_THEME_LOGOIMAGE_LABEL"
+						 description="T3_THEME_LOGOIMAGE_DESC"/>
+
+			<field name="enable_logoimage_sm" type="radio" class="t3onoff" default="0"
+						 label="T3_THEME_ENABLE_LOGOIMAGE_SM_LABEL"
+						 description="T3_THEME_ENABLE_LOGOIMAGE_SM_DESC">
+				<option value="0" class="off">JNO</option>
+				<option value="1" class="on">JYES</option>
+			</field>
+
+			<field name="logoimage_sm" type="t3media" default=""
+						 label="T3_THEME_LOGOIMAGE_SM_LABEL"
+						 description="T3_THEME_LOGOIMAGE_SM_DESC"/>
+
+		</fieldset>
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server name="Socialize Template" type="extension">http://www.jomsocial.com/socialize.xml</server>
+	</updateservers>
+
+</extension>

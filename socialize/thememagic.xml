@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fields name="thememagic" addfieldpath="/plugins/system/t3/includes/depend">
+
+		<fieldset name="typo_params" label="T3_TM_TYPO">
+			<field name="typo_params_default" type="t3depend" function="@group">
+				<option for="font-family-base" value="undefined">font-family-base-custom</option>
+				<option for="headings-font-family" value="undefined">headings-font-family-custom</option>
+			</field>
+
+			<field name="font-size-base" type="text" size="10" class="input-tiny t3tm-dimension" 
+				label="T3_TM_VARS_FONTSIZE_LABEL"
+				description="T3_TM_VARS_FONTSIZE_DESC" />
+
+			<field name="font-family-base" type="list"
+				label="T3_TM_VARS_FONTFAMILY_LABEL" 
+				description="T3_TM_VARS_FONTFAMILY_DESC" >
+				<option value="">JDEFAULT</option>
+				<option value="sans-serif">T3_TM_VARS_FONTFAMILY_SANS_SERIF</option>
+				<option value="serif">T3_TM_VARS_FONTFAMILY_SERIF</option>
+				<option value="monospace">T3_TM_VARS_FONTFAMILY_MONOSPACE</option>
+				<option value="undefined">T3_TM_VARS_FONTFAMILY_CUSTOM</option>  
+			</field>
+
+			<field name="font-family-base-custom" type="text" size="30" class="t3tm-font"
+				label="T3_TM_VARS_FONTFAMILY_CUSTOM_LABEL"
+				description="T3_TM_VARS_FONTFAMILY_CUSTOM_DESC" />
+
+			<field name="headings-font-family" type="list"
+				label="T3_TM_VARS_HEADINGFONTFAMILY_LABEL" 
+				description="T3_TM_VARS_HEADINGFONTFAMILY_DESC" >
+				<option value="">JDEFAULT</option>
+				<option value="sans-serif">T3_TM_VARS_FONTFAMILY_SANS_SERIF</option>
+				<option value="serif">T3_TM_VARS_FONTFAMILY_SERIF</option>
+				<option value="monospace">T3_TM_VARS_FONTFAMILY_MONOSPACE</option>
+				<option value="undefined">T3_TM_VARS_FONTFAMILY_CUSTOM</option>  
+			</field>
+			<field name="headings-font-family-custom" type="text" size="30" class="t3tm-font"
+				label="T3_TM_VARS_FONTFAMILY_CUSTOM_LABEL"
+				description="T3_TM_VARS_FONTFAMILY_CUSTOM_DESC" />
+
+		</fieldset>
+
+		<fieldset name="colors_params" label="T3_TM_COLORS">
+			<field type="note" label="T3_TM_BRAND_COLORS" />         
+			<field name="brand-primary" type="color" class="t3tm-color" label="T3_TM_VARS_PRIMARY_COLOR_LABEL" description="T3_TM_VARS_PRIMARY_COLOR_DESC" />
+			<field name="brand-accent" type="color" class="t3tm-color" label="T3_TM_VARS_ACCENT_COLOR_LABEL" description="T3_TM_VARS_ACCENT_COLOR_DESC" />
+			<field name="brand-success" type="color" class="t3tm-color" label="T3_TM_VARS_SUCCESS_COLOR_LABEL" description="T3_TM_VARS_SUCCESS_COLOR_DESC" />
+			<field name="brand-warning" type="color" class="t3tm-color" label="T3_TM_VARS_WARNING_COLOR_LABEL" description="T3_TM_VARS_WARNING_COLOR_DESC" />
+			<field name="brand-danger" type="color" class="t3tm-color" label="T3_TM_VARS_DANGER_COLOR_LABEL" description="T3_TM_VARS_DANGER_COLOR_DESC" />
+			<field name="brand-info" type="color" class="t3tm-color" label="T3_TM_VARS_INFO_COLOR_LABEL" description="T3_TM_VARS_INFO_COLOR_DESC" />
+			<field type="note" label="T3_TM_OTHER" /> 
+			<field name="body-bg" type="color" class="t3tm-color" label="T3_TM_VARS_BODY_BKG_LABEL" description="T3_TM_VARS_BODY_BKG_DESC" />
+			<field name="text-color" type="color" class="t3tm-color" label="T3_TM_VARS_TEXT_COLOR_LABEL" description="T3_TM_VARS_TEXT_COLOR_DESC" />
+			<field name="headings-color" type="color" class="t3tm-color" label="T3_TM_VARS_HEADING_COLOR_LABEL" description="T3_TM_VARS_HEADING_COLOR_DESC" />
+			<field name="link-color" type="color" class="t3tm-color" label="T3_TM_VARS_LINK_COLOR_LABEL" description="T3_TM_VARS_LINK_COLOR_DESC" />
+		</fieldset>
+
+		<fieldset name="visual_params" label="T3_TM_VISUAL">
+			<field name="border-radius-base" type="text" class="input-tiny t3tm-dimension" label="T3_TM_VARS_ELEMENT_RADIUS_BASE_LABEL" description="T3_TM_VARS_ELEMENT_RADIUS_BASE_DESC" />
+			<field name="border-radius-large" type="text" class="input-tiny t3tm-dimension" label="T3_TM_VARS_ELEMENT_RADIUS_LARGE_LABEL" description="T3_TM_VARS_ELEMENT_RADIUS_LARGE_DESC" />
+			<field name="border-radius-small" type="text" class="input-tiny t3tm-dimension" label="T3_TM_VARS_ELEMENT_RADIUS_SMALL_LABEL" description="T3_TM_VARS_ELEMENT_RADIUS_SMALL_DESC" />
+		</fieldset>
+
+		<fieldset name="article_params" label="T3_TM_ARTICLE">
+			<field name="t3-article-bg" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_BKG_LABEL" />
+			<field name="t3-article-color" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_TXT_LABEL" />
+			<field name="t3-article-link" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_LINK_LABEL" />
+			<field name="t3-article-hover" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_HOVER_LABEL" />
+			<field type="spacer" hr="true" />
+			<field name="t3-article-info-color" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_INFO_TXT_LABEL" />
+			<field name="t3-article-info-link" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_INFO_LINK_LABEL" />
+			<field name="t3-article-info-hover" type="color" class="t3tm-color" label="T3_TM_VARS_ARTICLE_INFO_HOVER_LABEL" />
+		</fieldset>
+
+		<fieldset name="component_params" label="T3_TM_COMPONENT">
+			<field name="t3-content-bg" type="color" class="t3tm-color" label="T3_TM_VARS_COMPONENT_BKG_LABEL" description="T3_TM_VARS_COMPONENT_BKG_DESC" />
+		</fieldset>
+
+		<fieldset name="module_params" label="T3_TM_MODULE">
+			<field name="t3-module-bg" type="color" class="t3tm-color" label="T3_TM_VARS_MODULE_BGCOLOR_LABEL" description="T3_TM_VARS_MODULE_BGCOLOR_DESC" />
+			<field name="t3-module-color" type="color" class="t3tm-color" label="T3_TM_VARS_MODULE_COLOR_LABEL" description="T3_TM_VARS_MODULE_COLOR_DESC" />
+			<field name="t3-module-title-bg" type="color" class="t3tm-color" label="T3_TM_VARS_MODULE_TITLE_BGCOLOR_LABEL" description="T3_TM_VARS_MODULE_TITLE_BGCOLOR_DESC" />
+			<field name="t3-module-title-color" type="color" class="t3tm-color" label="T3_TM_VARS_MODULE_TITLE_COLOR_LABEL" description="T3_TM_VARS_MODULE_TITLE_COLOR_DESC" />
+			<field name="t3-module-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_MODULE_LINK_COLOR_LABEL" />
+			<field name="t3-module-link-hover" type="color" class="t3tm-color" label="T3_TM_VARS_MODULE_LINK_HOVER_LABEL" />
+		</fieldset>
+
+		<fieldset name="toolbar_params" label="T3_TM_TOOLBAR">        
+			<field name="t3-header-toolbar-bg" type="color" class="t3tm-color" label="T3_TM_VARS_TOOLBAR_BKG_LABEL" description="T3_TM_VARS_TOOLBAR_BKG_DESC" />
+		</fieldset>
+
+		<fieldset name="header_params" label="T3_TM_HEADER">        
+			<field name="t3-header-bg" type="color" class="t3tm-color" label="T3_TM_VARS_HEADER_BKG_LABEL" />
+			<field name="t3-header-color" type="color" class="t3tm-color" label="T3_TM_VARS_HEADER_COLOR_LABEL" />
+			<field name="t3-header-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_HEADER_LINK_COLOR_LABEL" />
+			<field name="t3-header-link-hover" type="color" class="t3tm-color" label="T3_TM_VARS_HEADER_LINK_HOVER_LABEL" />
+		</fieldset>
+
+		<fieldset name="navbar_params" label="T3_TM_NAVBAR">
+			<field type="note" label="Navbar basic" />        
+			<field name="navbar-default-bg" type="color" class="t3tm-color" label="T3_TM_VARS_NAVBAR_BKG_LABEL" description="" />
+			<field name="navbar-default-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_NAVBAR_LINK_LABEL" description="" />
+			<field type="note" label="Navbar hover color" />
+			<field name="navbar-default-link-hover-bg" type="color" class="t3tm-color" label="T3_TM_VARS_NAVBAR_HOVER_LABEL" description="" />
+			<field name="navbar-default-link-hover-color" type="color" class="t3tm-color" label="T3_TM_VARS_NAVBAR_LINK_HOVER_LABEL" description="" />
+			<field type="note" label="Navbar active color" />
+			<field name="navbar-default-link-active-bg" type="color" class="t3tm-color" label="T3_TM_VARS_NAVBAR_ACTIVE_LABEL" description="" />
+			<field name="navbar-default-link-active-color" type="color" class="t3tm-color" label="T3_TM_VARS_NAVBAR_ACTIVE_COLOR_LABEL" description="" />
+		</fieldset>
+
+		<fieldset name="breadcrumbs_params" label="T3_TM_BREADCRUMBS">        
+			<field name="breadcrumb-bg" type="color" class="t3tm-color" label="T3_TM_VARS_BREADCRUMBS_BKG_LABEL" description="" />
+			<field name="breadcrumb-color" type="color" class="t3tm-color" label="T3_TM_VARS_BREADCRUMBS_COLOR_LABEL" description="" />
+			<field name="breadcrumb-active-color" type="color" class="t3tm-color" label="T3_TM_VARS_BREADCRUMBS_ACTIVE_LABEL" description="" />
+		</fieldset>
+
+		<fieldset name="top_params" label="T3_TM_TOP">        
+			<field name="t3-top-background" type="color" class="t3tm-color" label="T3_TM_VARS_TOP_BGCOLOR_LABEL" />
+			<field name="t3-top-text-color" type="color" class="t3tm-color" label="T3_TM_VARS_TOP_COLOR_LABEL" />
+			<field name="t3-top-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_TOP_LINK_COLOR_LABEL" />
+			<field name="t3-top-link-hover" type="color" class="t3tm-color" label="T3_TM_VARS_TOP_LINK_HOVER_LABEL" />
+		</fieldset>
+
+		<fieldset name="spotlight_params" label="T3_TM_SPOTLIGHT">        
+			<field name="t3-spotlight-background" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_BGCOLOR_LABEL" description="T3_TM_VARS_SPL_BGCOLOR_DESC" />
+			<field name="t3-spotlight-text-color" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_COLOR_LABEL" description="T3_TM_VARS_SPL_COLOR_DESC" />
+			<field name="t3-spotlight-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_LINK_COLOR_LABEL" />
+			<field name="t3-spotlight-link-hover" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_LINK_HOVER_LABEL" />
+			<field type="spacer" hr="true" /> 
+			<field name="t3-spotlight-2-background" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_BGCOLOR_2_LABEL" description="T3_TM_VARS_SPL_BGCOLOR_2_DESC" />
+			<field name="t3-spotlight-2-text-color" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_COLOR_2_LABEL" description="T3_TM_VARS_SPL_COLOR_2_DESC" />
+			<field name="t3-spotlight-2-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_LINK_COLOR_2_LABEL" />
+			<field name="t3-spotlight-2-link-hover" type="color" class="t3tm-color" label="T3_TM_VARS_SPL_LINK_HOVER_2_LABEL" />
+		</fieldset>
+
+		<fieldset name="bottom_params" label="T3_TM_BOTTOM">        
+			<field name="t3-bottom-background" type="color" class="t3tm-color" label="T3_TM_VARS_BOTT_BGCOLOR_LABEL" />
+			<field name="t3-bottom-text-color" type="color" class="t3tm-color" label="T3_TM_VARS_BOTT_COLOR_LABEL" />
+			<field name="t3-bottom-link-color" type="color" class="t3tm-color" label="T3_TM_VARS_BOTT_LINK_COLOR_LABEL" />
+			<field name="t3-bottom-link-hover" type="color" class="t3tm-color" label="T3_TM_VARS_BOTT_LINK_HOVER_LABEL" />
+		</fieldset>
+
+		<fieldset name="footer_params" label="T3_TM_FOOTER">
+			<field type="note" label="Footer Section" />
+			<field name="t3-footer-background" type="color" class="t3tm-color" label="T3_VARS_FOOTER_BG_LABEL" description="T3_VARS_FOOTER_BG_DESC" />
+			<field name="t3-footer-text-color" type="color" class="t3tm-color" label="T3_VARS_FOOTER_COLOR_LABEL" description="T3_VARS_FOOTER_COLOR_DESC" />
+			<field name="t3-footer-link-color" type="color" class="t3tm-color" label="T3_VARS_FOOTER_LINK_COLOR_LABEL" />
+			<field name="t3-footer-link-hover" type="color" class="t3tm-color" label="T3_VARS_FOOTER_LINK_HOVER_LABEL" />
+			<field type="note" label="Copyright Section" />
+			<field name="t3-copyright-background" type="color" class="t3tm-color" label="T3_VARS_COPYRIGHT_BG_LABEL" />
+			<field name="t3-copyright-color" type="color" class="t3tm-color" label="T3_VARS_COPYRIGHT_COLOR_LABEL" />
+			<field name="t3-copyright-link-color" type="color" class="t3tm-color" label="T3_VARS_COPYRIGHT_LINK_COLOR_LABEL" />
+			<field name="t3-copyright-link-hover" type="color" class="t3tm-color" label="T3_VARS_COPYRIGHT_LINK_HOVER_LABEL" />
+		</fieldset>
+
+		<fieldset name="grid_params" label="T3_TM_GRID">
+			<!-- Grid -->
+
+			<field name="container-lg" type="text" default="1170px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_LG_WIDTH_LABEL" description="T3_TM_VARS_SCFD_LG_WIDTH_DESC" />
+
+			<field name="container-md" type="text" default="970px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_MID_WIDTH_LABEL" description="T3_TM_VARS_SCFD_MID_WIDTH_DESC" />
+			
+			<field name="container-sm" type="text" default="750px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_SM_WIDTH_LABEL" description="T3_TM_VARS_SCFD_SM_WIDTH_DESC" />
+			
+			<field name="grid-gutter-width" type="text" default="30px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_GUTTER_LABEL" description="T3_TM_VARS_SCFD_GUTTER_DESC" />
+
+			<!-- End Grid -->
+		</fieldset>
+    
+		<fieldset name="advanced_params" label="T3_TM_ADVANCED">
+			<field name="import-external-urls" type="textarea" cols="30" rows="5"
+				label="T3_TM_VARS_IMPORT_EXTERNAL_URLS_LABEL"
+				description="T3_TM_VARS_IMPORT_EXTERNAL_URLS_DESC" />
+    </fieldset>
+	</fields>
+</form>
